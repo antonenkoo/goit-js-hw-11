@@ -17,12 +17,11 @@
   "bugs": {
     "url": "https://github.com/antonenkoo/goit-js-hw-13-image-finder/issues"
   },
-  "dependencies": {
-    "modern-normalize": "^1.1.0"
-  },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.5.0",
+    "modern-normalize": "^1.1.0",
     "parcel": "^2.5.0",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
   },
