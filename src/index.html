@@ -5,10 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <form class="search-form" id="search-form">
+      <input
+        class="search-input"
+        type="text"
+        name="query"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button class="search-btn" name="Search">Search</button>
+    </form>
+    <ul class="gallery">
+      <!-- Список с карточками изображений -->
+    </ul>
+
+    <button class="load-more-btn is-hiden">Load more</button>
+
+    <button class="to-up is-hiden">TO UP</button>
+
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
