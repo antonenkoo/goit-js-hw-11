@@ -5,7 +5,7 @@
   "homepage": "https://antonenkoo.github.io/goit-js-hw-13-image-finder",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-13-image-finder/ --no-minify"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-13-image-finder/"
   },
   "repository": {
     "type": "git",
