@@ -1,6 +1,7 @@
 import search from './js/searchFn';
 import template from './partials/picture-card';
 
+
 const button = document.querySelector('.search-btn');
 const ul = document.querySelector('.gallery');
 const loadMoreBtn = document.querySelector('.load-more-btn');
