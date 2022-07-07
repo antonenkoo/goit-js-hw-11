@@ -1,21 +1,21 @@
 {
-  "name": "goit-js-hw-13-image-finder",
+  "name": "goit-js-hw-11",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://antonenkoo.github.io/goit-js-hw-13-image-finder",
+  "homepage": "https://antonenkoo.github.io/goit-js-hw-11",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-13-image-finder/"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-11/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antonenkoo/goit-js-hw-13-image-finder.git"
+    "url": "git+https://github.com/antonenkoo/goit-js-hw-11.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/antonenkoo/goit-js-hw-13-image-finder/issues"
+    "url": "https://github.com/antonenkoo/goit-js-hw-11/issues"
   },
   "dependencies": {
     "handlebars": "^4.7.7",
