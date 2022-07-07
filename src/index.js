@@ -1,4 +1,5 @@
 import search from './js/searchFn';
+import Notiflix from 'notiflix';
 
 const button = document.querySelector('.search-btn');
 const ul = document.querySelector('.gallery');
@@ -15,6 +16,11 @@ button.addEventListener('click', e => {
   currentPage += 1;
 
   search(inputText, currentPage).then(res => {
+    if (res.hits.length < 1) {
+      Notiflix.Notify.failure(
+        'Sorry, there are no images matching your search query. Please try again.'
+      );
+    }
     res.hits.forEach(el => {
       ul.insertAdjacentHTML(
         'beforeend',
@@ -44,18 +50,17 @@ button.addEventListener('click', e => {
         </div>
       </li>`
       );
+      if (currentPage > 1) {
+        ul.lastElementChild.scrollIntoView({
+          block: 'start',
+          behavior: 'smooth',
+        });
+
+        UpBtn.classList.remove('is-hiden');
+      }
+
+      loadMoreBtn.classList.remove('is-hiden');
     });
-
-    if (currentPage > 1) {
-      ul.lastElementChild.scrollIntoView({
-        block: 'start',
-        behavior: 'smooth',
-      });
-
-      UpBtn.classList.remove('is-hiden');
-    }
-
-    loadMoreBtn.classList.remove('is-hiden');
   });
 });
 
