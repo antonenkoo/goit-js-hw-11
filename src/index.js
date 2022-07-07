@@ -60,6 +60,7 @@ button.addEventListener('click', e => {
       }
 
       loadMoreBtn.classList.remove('is-hiden');
+      
     });
   });
 });
