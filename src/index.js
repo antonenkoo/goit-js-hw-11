@@ -19,7 +19,7 @@ button.addEventListener('click', e => {
 
   search(inputText, currentPage).then(res => {
     totalHits += res.hits.length;
-    console.log(totalHits);
+    console.log(res);
 
     if (totalHits >= res.totalHits) {
       Notiflix.Notify.failure(
@@ -32,11 +32,12 @@ button.addEventListener('click', e => {
     if (inputText === '' || inputText === ' ' || inputText === '  ') {
       Notiflix.Notify.failure('Введите запрос !');
 
-      // return console.log('err: no text');
+      return console.log('err: no text');
     }
     if (inputText.includes('   ') && inputText.length >= 3) {
       Notiflix.Notify.failure('Некоректный ввод, введите текст');
-      // return console.log('2 пробела подряд');
+
+      return console.log('3 пробела подряд');
     }
 
     template(res);
