@@ -7,7 +7,6 @@ export default function card(res) {
       `<li class='li-js'>
             <div class='photo-card'>
               <img src=${el.webformatURL} alt='${el.tags}' />
-        
               <div class='stats'>
                 <p class='stats-item'>
                   <i class='material-icons'>thumb_up</i>
