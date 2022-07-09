@@ -8,7 +8,7 @@ const loadMoreBtn = document.querySelector('.load-more-btn');
 const UpBtn = document.querySelector('.to-up');
 
 let currentPage = 0;
-totalHits = 0;
+let totalHits = 0;
 
 button.addEventListener('click', e => {
   e.preventDefault();
