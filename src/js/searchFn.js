@@ -5,7 +5,7 @@ export default function searchRes(inputTxt, page) {
 
   return axios
     .get(
-      `https://pixabay.com/api/?image_type=photo&orientation=horizontal&q=${inputTxt}&page=${page}&per_page=20&key=${keyAPI}`
+      `https://pixabay.com/api/?image_type=photo&orientation=horizontal&q=${inputTxt}&page=${page}&per_page=40&key=${keyAPI}`
     )
     .then(res => res.data);
 }
